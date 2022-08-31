@@ -1,0 +1,309 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    background-color: rgb(225, 225, 225);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+aside{
+    grid-column: 1/2;
+    background-color:white;
+    padding: 5px;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+}
+.top-aside{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+.top-aside h5, .top-aside p{
+    margin: 0;
+    margin-left: 5px;
+}
+.dash{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.center div{ 
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    margin: 10px;
+    padding: 5px;
+}
+.bottom-aside{
+    background: url(../images/Image-from-iOS-2.jpg);
+    background-size: cover;
+    border-radius: 10px;
+    padding: 5px;
+}
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 5px;
+    border: none;
+    margin-top: 10px;
+}
+.switch{
+    display: flex;
+    justify-content:flex-start;
+    justify-content: space-between;
+}
+.switch div{
+    margin-left: 0;
+}
+.container{
+    grid-column: 2/6;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+nav{
+    grid-column: 1/5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 5px;
+}
+.search{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+}
+.search img{
+    width: 20px;
+    height: 20px;
+}
+.one,.two,.search{
+    background-color: white;
+    padding: 5px;
+    border-radius: 20px;
+}
+.two{
+    display: flex;
+    align-items: center;
+    width: 280px;
+}
+.one{
+    height: 20px;
+}
+
+input{
+    border: none;
+}
+input:focus{
+    outline: none;
+}
+.main{
+    grid-column: 1/4;
+}
+#Top{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.suggestion{
+    display: flex;
+    justify-content: space-evenly;
+}
+.main-card{
+    display: flex;
+    padding: 10px;
+    justify-content:space-evenly;
+}
+.card{
+    width: 180px;
+    height: 280px;
+    border-radius: 10px;
+    margin: 5;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.sub-card{
+    background: url(../images/police-98.png);
+    background-size: 100%;
+    height: 49%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px;
+   margin: 10px;
+   border-radius: 10px;
+}
+.sub-card div{
+    display: flex;
+    justify-content: space-between;
+}
+#nice{
+    margin-left: 29%;
+    width: 100px;
+}
+span{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+span,p{
+    font-size: small;
+    margin: 0;
+    padding: 0;
+}
+.detial-card{
+    margin: 5px;
+    padding: 5px;
+}
+.card-member{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;  
+    background-color: white;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 10px;
+}
+.member{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin: 3px;
+    width: 250px;
+    border-bottom: 1px solid lightgray;
+
+}
+.percent span{
+    display: flex;
+    flex-direction: column;
+}
+h5 span{
+    font-weight: 100;
+}
+.person{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.aside-right{
+    grid-column: 4/5;
+    grid-row: 2/5;
+    margin: 5px;
+}
+.balance{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: white;
+    margin-top: 25px;
+    padding: 5px;
+}
+.balance div h4{
+    display: flex;
+    justify-content: space-between;
+}
+.balance button{
+    margin-left: 40px;
+    width: 180px;
+}
+.collections{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    border-radius: 10px;
+    height: 200px;
+}
+.collections .member{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 40px;
+}
+.collections #Top ,.collections .member,.friend-profile #Top{
+    margin: 0;
+    padding: 3px;
+}
+.collections img,.friend-profile img{
+    width: 40px;
+    height: 40px;
+}
+.collections .member {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: none;
+    padding: none;
+}
+.friend{
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+.profile{
+    display: flex;
+    width: 260px;
+    height: 250px;
+}
+.profile .sub-card{
+    width: 100px;
+    height: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+.friend-profile{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+.friend-profile #Top h5 p{
+    font-weight: 100;
+}
+.friend .card{
+    height: 190px;
+    width: 120px;
+    margin: 5px;
+}
+.friend .card .detial-card h4{
+    margin: 0px;
+}
+@media(max-width:1028px){
+    .bottom-aside,.member-section:nth-child(1),.suggestion .search:nth-child(1),.suggestion .search:nth-child(2),.main-card .card:nth-child(1){
+        display: none;
+    }
+    .center div{
+        display: flex;
+        flex-direction: column;
+        margin-right: 50%;
+    }
+    .switch{
+        display: flex;
+        flex-direction: row;
+    }
+    .card-member{
+        margin:10px;
+    }
+    .card{
+        width: 160px;
+    }
+    #nice{
+        margin-left: 23%;
+    }
+}
